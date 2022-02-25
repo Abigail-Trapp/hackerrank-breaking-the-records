@@ -17,4 +17,8 @@ function breakingRecords(scores) {
     return [countmax,countmin]
   }
   
-  document.write(breakingRecords([3,4,21,36,10,28,35,5,24,42]))
+  // document.write(breakingRecords([3,4,21,36,10,28,35,5,24,42]))
+  let trackForm = document.getElementById("trackForm")
+  let numberBox = document.getElementById("numberBox")
+  numberBox.innerHTML = `${breakingRecords([3,4,21,36,10,28,35,5,24,42])}`
+  trackForm.append(numberBox)
